@@ -1,4 +1,3 @@
-/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId,navId) => {
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -12,7 +11,6 @@ const showMenu = (toggleId,navId) => {
 
 showMenu('nav-toggle','nav-menu')
 
-/*===== REMOVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link'),
       navMenu = document.getElementById('nav-menu')
 
@@ -21,7 +19,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
@@ -42,7 +39,6 @@ function scrollActive(){
     })
 }
 
-/*===== CHANGE COLOR HEADER =====*/ 
 window.onscroll = () => {
     const nav = document.getElementById('header')
     if(this.scrollY >= 200){
